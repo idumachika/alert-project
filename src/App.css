@@ -1,47 +1,220 @@
-.App {
-  text-align: center;
-}
-
-.App-logo {
-  animation: App-logo-spin infinite 20s linear;
-  height: 40vmin;
-  pointer-events: none;
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
-}
 
 .goal-container{
-  flex:1px;
-  justify-content: center;
-  align-items: center
+  width: 100%;
+  height: 100%;
+  margin-top: 200px;
+  justify-content: space-around
+  
 }
-.goal-card{
+.fixed-goal{
   box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
   border-radius: 6px;
+  background: #9D0F3E;
+  border: 1px solid #EDEDED;
+  box-sizing: border-box;
+  width: 300px;
+  height: 250px;
+  margin-left:10px;
+  margin-right:10px;
+  
+}
+.flex-goal{
+  box-shadow: 3px 8px 24px rgba(255, 255, 255, 0.3221); 
+   border-radius: 6px;
+  background: #ffffff;
+  border: 1px solid #EDEDED;
+  box-sizing: border-box;
+  width: 300px;
+  height: 250px;
+  margin-left:10px;
+  margin-right:10px;
+}
+.stash-goal{
+  border-radius: 6px;
+  background: #ffffff;
+  box-shadow: 0px 8px 24px rgba(185, 185, 185, 0.162138);
+  border: 1px solid #EDEDED;
+  box-sizing: border-box;
+  width: 300px;
+  height: 249px;
+  margin-left:10px;
+  margin-right:10px;
+
+}
+.row{
+  display:flex;
+  align-items: center;
+  justify-content: center;
+  padding-left: 20px
+}
+.flex-text{
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  color: #ffffff;
+  margin-left: 15px;
+  line-height: 22px;
+
+}
+.plan-text{
+  font-weight: bold;
+  font-size: 18px;
+  display: block;
+  color: #AB2656;
+  margin-left: 15px;
+  line-height: 22px;
+
+}
+.select-plan{
+  font-size: 18px;
+  line-height: 22px;
+  text-transform: uppercase;
+  color: #4D4D4D;
+  text-align: center;
+  text-transform: uppercase;
+
+}
+.info-text{
+  font-size: 14px;
+  line-height: 20px;
+  color: #4D4D4D;  
+  display: block;
+  margin-left: 15px
+
+}
+.info-text2{
+  color: #FFFFFF;
+  font-size: 14px;
+  line-height: 20px;
+  display: block;
+  margin-left: 15px
+
+}
+/* FixedGoalForm */
+.fixed-control-form{
+  width: 640px;
+  height: 591px;
+  margin: auto;
+  padding-top: 50px;
   background: #FFFFFF;
   border: 1px solid #EDEDED;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  margin-top: 200px;
+
+}
+.form-control{
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  border-radius: 3px;
+  height:50px;
+}
+.header {
+  border: 1px solid #F4F4F4;
+  transform: rotate(-0.04deg);
+  text-align: center;
+  font-size: 18px;
+  line-height: 22px;
+  padding-bottom: 1px solid #eeeeee;
+  border-bottom: 15px;
+  background-color: white
+
+}
+h5{
+  text-align: center;
+  font-size: 18px;
+  font-family: Proxima Nova;
+  font-size: 18px;
+  line-height: 22px;
 
 
+text-align: center;
+
+color: #444444;
+
+}
+.header-text{
+  font-family: Proxima Nova;
+  font-size: 18px;
+  text-align: center;
+  color: #444444;
+  display: block
+}
+.form-container{
+  padding-top: 40px;
+}
+.form-group{
+padding-right:70px;
+padding-left: 70px
+
+}
+.form-row{
+  padding-right:70px;
+  padding-left: 70px
+
+}
+.header-info{
+  font-family: Proxima Nova;
+  font-size: 18px;
+  text-align: center;
+  color: #444444;
+  display: block;
+  top:452px
+
+
+}
+.label-text{
+  font-family: Proxima Nova;
+  font-size: 14px;
+  line-height: 17px;
+  color: #7C7C7C;
+}
+.btn-wema, .btn-wema-lg {
+  color: #fff;
+  background-color: #a00b40;
+  border: none;
+  border-radius: 3px;
+  width: 200px;
+  height: 45px;
+  font-size: 1.2rem;
+  text-transform: capitalize;
+  padding: 0 2rem;
+  letter-spacing: .16rem;
+  transition: .3s ease-out .2s;
+  margin-top: 15px;
+  margin-left: 220px;
+  margin:center;
+  /* font-family: Proxima Nova; */
+  /* font-style: 'Semibold' */
+
+
+}
+/* next-fixed-goal */
+.fixed-control-container{
+  width: 640px;
+  height: 442px;
+  margin: auto;
+  padding-top: 50px;
+  background: #FFFFFF;
+  border: 1px solid #EDEDED;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  margin-top: 200px;
+
+}
+select.form-control:not([size]):not([multiple]){
+  height: 50px;
+  border: 1px solid #CCCCCC;
+  box-sizing: border-box;
+  border-radius: 3px;
+}
+.alat-user{
+  width: 500px;
+  margin: auto;
+  height:70px;
+  background: linear-gradient(168.42deg, #FFFFFF 0%, rgba(195, 195, 195, 0.291752) 100%), linear-gradient(348.42deg, #7C5578 0%, #580637 100%);
+  background-blend-mode: multiply, normal;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
+  border-radius: 4px;
+  
 }
