@@ -31,3 +31,17 @@
     transform: rotate(360deg);
   }
 }
+
+.goal-container{
+  flex:1px;
+  justify-content: center;
+  align-items: center
+}
+.goal-card{
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.06);
+  border-radius: 6px;
+  background: #FFFFFF;
+  border: 1px solid #EDEDED;
+
+
+}

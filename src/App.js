@@ -1,24 +1,20 @@
 import React from 'react';
-import logo from './logo.svg';
+import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import './App.css';
+import GoalPlan from './container/GoalPlan';
+import FixedGoal from './container/FixedGoal';
+import NextFixedGoal from './container/NextFixedGoal'
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <Router>
+    <Route exact path="/" component={GoalPlan}/>
+    <Route exact path="/fixed-goal" component={FixedGoal}/>
+    <Route exact path="/next-fixed-goal" component={NextFixedGoal}/>
+    </Router>
+
+      
     </div>
   );
 }
